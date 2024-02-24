@@ -139,3 +139,7 @@
     position: relative;
 
 }
+/* Experiance */
+.box img {
+    object-fit: contain;
+}

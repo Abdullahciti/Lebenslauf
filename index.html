@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Lebenslauf/</title>
+    <title>Lebenslauf</title>
     <!-- Tailwind  -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Awesome icons -->
@@ -21,7 +21,7 @@
   <body class="my-cv font-[Roboto] bg-[#eeeeee]">
     <div class="container flex lg:flex-row flex-col">
       <div class="left-side bg-[#eeeeee] lg:w-[30%] w-[100%] flex flex-col">
-        <div class="bg-[#f7f7f7] my-5 rounded-lg">
+        <div class="wrapper w-full bg-[#fff] my-5 rounded-lg">
           <div
             class="image-box w-fit m-auto flex flex-col items-center justify-center"
           >
@@ -215,36 +215,40 @@
               <span class="relative z-10">Prefessional Exp</span>
             </h1>
           </div>
-          <ul class="w-full">
-            <li class="w-full flex flex-row items-center justify-evenly">
+          <ul class="w-full exp">
+            <li class="w-full my-3 flex flex-row items-center justify-evenly">
               <p class="w-[115px] text-xl">Html</p>
-              <div class="relative mx-5 w-60 h-[9px] bg-blue-200">
+              <div class="relative mx-5 w-60 h-[25px] bg-blue-200">
                 <span
-                  class="absolute top-0 left-0 h-full w-10 bg-blue-600"
+                  class="absolute top-0 left-0 h-full w-[0%] bg-blue-600"
+                  data-width="90"
                 ></span>
               </div>
             </li>
-            <li class="w-full flex flex-row items-center justify-evenly">
+            <li class="w-full my-3 flex flex-row items-center justify-evenly">
               <p class="w-[115px] text-xl">Css</p>
-              <div class="relative mx-5 w-60 h-[9px] bg-blue-200">
+              <div class="relative mx-5 w-60 h-[25px] bg-blue-200">
                 <span
-                  class="absolute top-0 left-0 h-full w-10 bg-blue-600"
+                  class="absolute top-0 left-0 h-full w-[0%] bg-blue-600"
+                  data-width="85"
                 ></span>
               </div>
             </li>
-            <li class="w-full flex flex-row items-center justify-evenly">
+            <li class="w-full my-3 flex flex-row items-center justify-evenly">
               <p class="w-[115px] text-xl">JavaScript</p>
-              <div class="relative mx-5 w-60 h-[9px] bg-blue-200">
+              <div class="relative mx-5 w-60 h-[25px] bg-blue-200">
                 <span
-                  class="absolute top-0 left-0 h-full w-10 bg-blue-600"
+                  class="absolute top-0 left-0 h-full w-[0%] bg-blue-600"
+                  data-width="70"
                 ></span>
               </div>
             </li>
-            <li class="w-full flex flex-row items-center justify-evenly">
-              <p class="w-[115px] text-xl">Frameworks</p>
-              <div class="relative mx-5 w-60 h-[9px] bg-blue-200">
+            <li class="w-full my-3 flex flex-row items-center justify-evenly">
+              <p class="w-[115px] text-xl">Php</p>
+              <div class="relative mx-5 w-60 h-[25px] bg-blue-200">
                 <span
-                  class="absolute top-0 left-0 h-full w-10 bg-blue-600"
+                  class="absolute top-0 left-0 h-full w-[0%] bg-blue-600"
+                  data-width="25"
                 ></span>
               </div>
             </li>
@@ -259,39 +263,64 @@
             </h1>
           </div>
           <div
-            class="parent w-full bg-[#fefefe] flex lg:flex-row flex-col lg:items-start lg:justify-start items-center justify-center"
+            class="parent w-full bg-[#fefefe] flex lg:flex-row flex-col lg:items-start lg:justify-evenly items-center justify-center lg:flex-wrap"
           >
             <div
-              class="box flex flex-col items-center justify-center text-center"
+              class="box flex flex-col items-center justify-between text-center"
             >
-              <div class="image max-w-40">
-                <img src="imgs/TypeScrpt.png" alt="" />
+              <div class="image max-w-40 h-[160px]">
+                <img
+                  class="w-[140px] h-[140px]"
+                  src="imgs/TypeScrpt.png"
+                  alt=""
+                />
               </div>
-              <h2>TypeScript</h2>
             </div>
             <div
-              class="box flex flex-col items-center justify-center text-center"
+              class="box flex flex-col items-center justify-between text-center"
             >
-              <div class="image max-w-40">
-                <img src="imgs/Cmder.png" alt="" />
+              <div class="image max-w-40 h-[160px]">
+                <img class="w-[140px] h-[140px]" src="imgs/Cmder.png" alt="" />
               </div>
-              <h2>Cmder</h2>
             </div>
             <div
-              class="box flex flex-col items-center justify-center text-center"
+              class="box flex flex-col items-center justify-between text-center"
             >
-              <div class="image max-w-40">
-                <img src="imgs/Sass.png" alt="" />
+              <div class="image max-w-40 h-[160px]">
+                <img class="w-[140px] h-[140px]" src="imgs/Sass.png" alt="" />
               </div>
-              <h2>Sass</h2>
             </div>
             <div
-              class="box flex flex-col items-center justify-center text-center"
+              class="box flex flex-col items-center justify-between text-center"
             >
-              <div class="image max-w-40">
-                <img src="imgs/React.png" alt="" />
+              <div class="image max-w-40 h-[160px]">
+                <img class="w-[140px] h-[140px]" src="imgs/React.png" alt="" />
               </div>
-              <h2>React</h2>
+            </div>
+            <div
+              class="box flex flex-col items-center justify-between text-center"
+            >
+              <div class="image max-w-40 h-[160px]">
+                <img
+                  class="w-[140px] h-[140px]"
+                  src="imgs/Vue-pic.png"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div
+              class="box flex flex-col items-center justify-between text-center"
+            >
+              <div class="image max-w-40 h-[160px]">
+                <img class="w-[140px] h-[140px]" src="imgs/Github.png" alt="" />
+              </div>
+            </div>
+            <div
+              class="box flex flex-col items-center justify-between text-center"
+            >
+              <div class="image max-w-40 h-[160px]">
+                <img class="w-[140px] h-[140px]" src="imgs/APi.png" alt="" />
+              </div>
             </div>
           </div>
         </div>
