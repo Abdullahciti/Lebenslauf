@@ -1,0 +1,141 @@
+:root{
+    --main-color: royalblue;
+}
+.container {
+    margin: 0 auto;
+    padding: 0 60px;
+}
+@media (min-width: 500px) {
+    .container {
+        width: 475px !important;
+    }
+}
+@media (min-width: 767px) {
+    .container {
+        width: 720px !important;
+    }
+}
+@media (min-width: 991px) {
+    .container {
+        width: 950px !important;
+    }
+}
+@media (min-width: 1149px) {
+    .container {
+        width: 1100px !important;
+    }
+}
+
+.main-title, .main-title-left {
+    position: relative;
+    padding: 10px 15px;
+    background: #e9e8e8;
+    line-height: 1.8;
+    color: black;
+}
+.main-title-left {
+    margin: 15px auto !important;
+}
+@media (min-width: 1024px) {
+    .main-title {
+        margin: 10px 0 !important;
+    }
+}
+@media (max-width: 1024px) {
+    .main-title {
+        margin: 15px auto;
+    }
+}
+
+.main-title::before, .main-title-left::before {
+    content: "";
+    position: absolute;
+    left: -30px;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 50%;
+    width: 0%;
+    height: 0px;
+    background: var(--main-color);
+}
+.main-title::after, .main-title-left::after {
+    content: "";
+    position: absolute;
+    right: -30px;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 50%;
+    width: 0%;
+    height: 0px;
+    background: var(--main-color);
+}
+.main-title:hover.main-title::before, .main-title-left:hover.main-title-left::before  {
+    /* animation-name: move-left;
+    animation-duration: 1s;
+    animation-iteration-count: initial;
+    animation-direction:alternate; */
+    animation: move-left 1s forwards alternate;
+}
+.main-title:hover.main-title::after, .main-title-left:hover.main-title-left::after  {
+    animation: move-right 1s forwards alternate;
+}
+.main-title:hover span, .main-title-left:hover span {
+    transition: all 0.3s;
+    transition-delay: 0.7s;
+    color: white;
+}
+@keyframes move-left {
+    50%{
+        left: 0px;
+        background-color: royalblue;
+    }
+    100%{
+        left: 0;
+        border-radius: 0; 
+        height: 100%;
+        width: 51%;
+        transform: translateY(-50%);
+        background-color: royalblue;
+        color: white;
+        z-index: 0;
+        border: 1px solid #f7f7f7;
+        border-right: none;
+    }
+}
+@keyframes move-right {
+    50%{
+        right: 0;
+        background-color: royalblue;
+    }
+    100%{
+        right: 0;
+        border-radius: 0; 
+        height: 100%;
+        width: 50%;
+        transform: translateY(-50%);
+        background-color: royalblue;
+        color: white;
+        z-index: 0;
+        border: 1px solid #f7f7f7;
+        border-left: none;
+    }
+}
+
+/* Left Side */
+.left-side .rounded-lg {
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+}
+.right-side .wrapper {
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+}
+/* my Avatar */
+.left-side .image-box {
+    border-bottom: 2px solid black;
+}
+
+/* Education */ 
+.education ul li i {
+    line-height: 1.6;
+    position: relative;
+
+}
