@@ -13,7 +13,6 @@ window.onscroll = () => {
             let interValid = setInterval(() => {
               el.style.width = `${startIndex++}%`;
               if (parseInt(startIndex) >= parseInt(el.dataset.width)) {
-                console.log("heelo")
                 clearInterval(interValid);
               }
             }, 4000 / parseInt(el.dataset.width));
