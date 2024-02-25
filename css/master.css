@@ -4,9 +4,6 @@
 .main-wrapper {
     width: calc(100% - 50px);
 }
-.main-wrapper:hover {
-    animation-name: move-left;
-}
 .main-title, .main-title-left {
     position: relative;
     padding: 10px 15px;
