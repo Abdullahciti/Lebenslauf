@@ -5,6 +5,7 @@ let started = false;
 const codeSkills = document.querySelectorAll(".wrapper .exp li span");
 let startedTwo = false;
 
+
 window.onscroll = () => {
       if (window.scrollY > 50) {
             if (!startedTwo) {
@@ -17,7 +18,6 @@ window.onscroll = () => {
               }
             }, 4000 / parseInt(el.dataset.width));
           });
-          console.log("heelo")
         };
         startedTwo = true;
       }
@@ -35,5 +35,16 @@ window.onscroll = () => {
         };
         started = true;
       }
+}
 
+
+// More Skills
+const root = document.documentElement;
+const marqueeElementsDisplayed = getComputedStyle(root).getPropertyValue("--marquee-elements-displayed");
+const marqueeContent = document.querySelector("ul.marquee-content");
+
+root.style.setProperty("--marquee-elements", marqueeContent.children.length);
+
+for(let i=0; i<marqueeElementsDisplayed; i++) {
+  marqueeContent.appendChild(marqueeContent.children[i].cloneNode(true));
 }
